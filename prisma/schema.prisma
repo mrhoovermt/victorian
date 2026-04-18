@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ContactSource {
+  players_club
+  signup_form
+  manual
+}
+
+model Contact {
+  id            String        @id @default(cuid())
+  firstName     String
+  lastName      String
+  email         String        @unique
+  phone         String?
+  birthdayMonth Int?
+  birthdayDay   Int?
+  favoriteDrink String?
+  emailOptIn    Boolean       @default(false)
+  smsOptIn      Boolean       @default(false)
+  source        ContactSource @default(manual)
+  notes         String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model CateringLead {
+  id            String    @id @default(cuid())
+  name          String
+  email         String
+  phone         String?
+  eventType     String?
+  eventDate     DateTime?
+  headcount     Int?
+  notes         String?
+  internalNotes String?
+  contacted     Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+}
+
+model TaxiLead {
+  id            String    @id @default(cuid())
+  name          String
+  email         String
+  phone         String?
+  preferredDate DateTime?
+  notes         String?
+  internalNotes String?
+  contacted     Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+}
+
+model EmailCampaign {
+  id             String   @id @default(cuid())
+  subject        String
+  bodyHtml       String
+  recipientCount Int      @default(0)
+  sentAt         DateTime @default(now())
+  createdAt      DateTime @default(now())
+}
+
+model SmsCampaign {
+  id             String   @id @default(cuid())
+  message        String
+  recipientCount Int      @default(0)
+  sentAt         DateTime @default(now())
+  createdAt      DateTime @default(now())
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  totpSecret   String?
+  createdAt    DateTime @default(now())
+}
