@@ -3,4 +3,4 @@ nixpkgsArchive = "nixos-25.05"
 nixPkgs = ["nodejs_22", "npm-9_x", "openssl"]
 
 [phases.build]
-cmds = ["rm -rf .next/cache", "npm run build"]
+cmds = ["find /app/.next/cache -mindepth 1 -delete 2>/dev/null || true", "npm run build"]
