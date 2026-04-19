@@ -3,7 +3,7 @@ import { Hero } from "@/components/public/Hero";
 import { Gaming } from "@/components/public/Gaming";
 import { FoodDrinks } from "@/components/public/FoodDrinks";
 import { PlayersClub } from "@/components/public/PlayersClub";
-import { Catering } from "@/components/public/Catering";
+// import { Catering } from "@/components/public/Catering";
 import { TaxiSection } from "@/components/public/TaxiSection";
 import { Gallery } from "@/components/public/Gallery";
 import { Location } from "@/components/public/Location";
@@ -19,7 +19,7 @@ export default function Home() {
         <Gaming />
         <FoodDrinks />
         <PlayersClub />
-        <Catering />
+        {/* <Catering /> */}
         <TaxiSection />
         <Gallery />
         <Location />

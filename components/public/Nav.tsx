@@ -7,7 +7,7 @@ const links = [
   { label: "Gaming", href: "#gaming" },
   { label: "Food & Drinks", href: "#food" },
   { label: "Players Club", href: "#players-club" },
-  { label: "Catering", href: "#catering" },
+  // { label: "Catering", href: "#catering" },
   { label: "Gallery", href: "#gallery" },
   { label: "Location", href: "#location" },
 ];
