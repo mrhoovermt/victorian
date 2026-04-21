@@ -32,8 +32,9 @@ export function FoodDrinks() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/edited/bar-interior.jpg"
-                alt="Bar and lounge area at Victorian Casino"
+                alt="Bar and lounge area at Victorian Casino in Whitefish, Montana"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -65,8 +66,9 @@ export function FoodDrinks() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/edited/gaming-ambient-01.jpg"
-                alt="Gaming lounge interior at Victorian Casino"
+                alt="Gaming lounge interior at Victorian Casino in Whitefish, Montana"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

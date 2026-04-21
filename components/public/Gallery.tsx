@@ -1,13 +1,13 @@
 const PHOTOS = [
-  { src: "/images/edited/gallery-floor-overhead.jpg", alt: "Victorian Casino gaming floor overhead view" },
-  { src: "/images/edited/gallery-floor-wide.jpg",     alt: "Full gaming floor at Victorian Casino" },
-  { src: "/images/edited/gallery-montana-gold.jpg",   alt: "Montana Gold slot machines" },
-  { src: "/images/edited/gallery-exterior-night.jpg", alt: "Victorian Casino exterior at night" },
-  { src: "/images/edited/gallery-royal-touch.jpg",    alt: "Royal Touch gaming machines" },
-  { src: "/images/edited/gallery-bigfoot-keno.jpg",   alt: "Bigfoot Mountain Keno machine" },
-  { src: "/images/edited/gallery-montana-gambler.jpg",alt: "Montana Gambler machine" },
-  { src: "/images/edited/gallery-deep-seas.jpg",      alt: "Deep Seas Adventure Keno machines" },
-  { src: "/images/edited/gallery-atm.jpg",            alt: "Victorian Casino ATM" },
+  { src: "/images/edited/gallery-floor-overhead.jpg", alt: "Victorian Casino gaming floor in Whitefish, Montana — overhead view of slot and keno machines" },
+  { src: "/images/edited/gallery-floor-wide.jpg",     alt: "Full gaming floor at Victorian Casino, Whitefish MT — 20 licensed gaming machines" },
+  { src: "/images/edited/gallery-montana-gold.jpg",   alt: "Montana Gold slot machines at Victorian Casino in Whitefish" },
+  { src: "/images/edited/gallery-exterior-night.jpg", alt: "Victorian Casino exterior at night on Hwy 93 S, Whitefish, Montana" },
+  { src: "/images/edited/gallery-royal-touch.jpg",    alt: "Royal Touch poker and keno machines at Victorian Casino, Whitefish MT" },
+  { src: "/images/edited/gallery-bigfoot-keno.jpg",   alt: "Bigfoot Mountain Keno gaming machine at Victorian Casino in Whitefish" },
+  { src: "/images/edited/gallery-montana-gambler.jpg",alt: "Montana Gambler video poker machine at Victorian Casino, Flathead Valley" },
+  { src: "/images/edited/gallery-deep-seas.jpg",      alt: "Deep Seas Adventure Keno machine at Victorian Casino in Whitefish, Montana" },
+  { src: "/images/edited/gallery-atm.jpg",            alt: "ATM at Victorian Casino in Whitefish, Montana" },
 ];
 
 export function Gallery() {
@@ -32,6 +32,7 @@ export function Gallery() {
                 src={photo.src}
                 alt={photo.alt}
                 className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                loading="lazy"
               />
             </div>
           ))}

@@ -7,8 +7,9 @@ export function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/media/hero-poster.jpg"
-          alt="Victorian Casino gaming floor"
+          alt="Gaming floor at Victorian Casino in Whitefish, Montana — slot machines, keno, and video poker"
           className="w-full h-full object-cover opacity-50"
+          fetchPriority="high"
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/80" />
@@ -20,6 +21,7 @@ export function Hero() {
         </p>
         <h1 className="text-5xl md:text-7xl font-light text-white leading-tight mb-6">
           {SITE.tagline}
+          <span className="sr-only"> — Victorian Casino in Whitefish, Montana</span>
         </h1>
         <p className="text-gray-300 text-lg md:text-xl font-light mb-4 font-sans">
           {SITE.hours.weekdays} &nbsp;·&nbsp; {SITE.hours.weekends}

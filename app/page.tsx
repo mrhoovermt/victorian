@@ -13,7 +13,9 @@ import { Footer } from "@/components/public/Footer";
 export default function Home() {
   return (
     <>
-      <Nav />
+      <header>
+        <Nav />
+      </header>
       <main>
         <Hero />
         <Gaming />

@@ -21,8 +21,9 @@ export function Gaming() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/edited/gaming-floor-01.jpg"
-              alt="Montana Gold gaming machines at Victorian Casino"
+              alt="Montana Gold slot machines at Victorian Casino in Whitefish, Montana"
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         </div>
