@@ -1,7 +1,14 @@
-// Drop media files into public/media/ — photos (.jpg/.png) and videos (.mp4) auto-populate.
-// For now, renders placeholder tiles.
-
-const PLACEHOLDER_COUNT = 9;
+const PHOTOS = [
+  { src: "/images/edited/gallery-floor-overhead.jpg", alt: "Victorian Casino gaming floor overhead view" },
+  { src: "/images/edited/gallery-floor-wide.jpg",     alt: "Full gaming floor at Victorian Casino" },
+  { src: "/images/edited/gallery-montana-gold.jpg",   alt: "Montana Gold slot machines" },
+  { src: "/images/edited/gallery-exterior-night.jpg", alt: "Victorian Casino exterior at night" },
+  { src: "/images/edited/gallery-royal-touch.jpg",    alt: "Royal Touch gaming machines" },
+  { src: "/images/edited/gallery-bigfoot-keno.jpg",   alt: "Bigfoot Mountain Keno machine" },
+  { src: "/images/edited/gallery-montana-gambler.jpg",alt: "Montana Gambler machine" },
+  { src: "/images/edited/gallery-deep-seas.jpg",      alt: "Deep Seas Adventure Keno machines" },
+  { src: "/images/edited/gallery-atm.jpg",            alt: "Victorian Casino ATM" },
+];
 
 export function Gallery() {
   return (
@@ -15,14 +22,17 @@ export function Gallery() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-          {Array.from({ length: PLACEHOLDER_COUNT }).map((_, i) => (
+          {PHOTOS.map((photo) => (
             <div
-              key={i}
-              className="aspect-square bg-[#111] border border-[#1a1a1a] flex items-center justify-center group hover:border-[#c9a96e]/30 transition-colors"
+              key={photo.src}
+              className="aspect-square overflow-hidden group"
             >
-              <span className="text-gray-700 text-xs font-sans group-hover:text-gray-500 transition-colors">
-                Photo {i + 1}
-              </span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+              />
             </div>
           ))}
         </div>

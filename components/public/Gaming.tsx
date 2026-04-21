@@ -17,8 +17,13 @@ export function Gaming() {
             <p className="text-gray-400 text-lg leading-relaxed mb-6 font-sans">{GAMING.description}</p>
             <p className="text-[#c9a96e] text-sm leading-relaxed font-sans italic">{GAMING.firstTimerNote}</p>
           </div>
-          <div className="aspect-video bg-[#1a1a1a] border border-[#2a2a2a] flex items-center justify-center">
-            <p className="text-gray-600 text-sm font-sans">Photo placeholder</p>
+          <div className="aspect-video overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/edited/gaming-floor-01.jpg"
+              alt="Montana Gold gaming machines at Victorian Casino"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 

@@ -4,7 +4,7 @@ export const SITE = {
   subtagline: "Whitefish, Montana — Open 7 Days a Week",
   address: "6550 Hwy 93 S Suite 104, Whitefish MT 59937",
   addressNote: "In the same building as Dairy Queen",
-  phone: "(406) 555-0100", // replace with actual
+  phone: "(406) 862-6692",
   email: "info@victoriancasinowhitefish.com",
   hours: {
     weekdays: "Sun–Thu: 8am – 1am",

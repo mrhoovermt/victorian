@@ -3,19 +3,13 @@ import { SITE } from "@/content/site";
 export function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Video background placeholder — swap src when asset is available */}
       <div className="absolute inset-0 bg-black">
-        <video
-          className="w-full h-full object-cover opacity-40"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/media/hero-poster.jpg"
-        >
-          {/* Drop your video asset at public/media/hero.mp4 */}
-          <source src="/media/hero.mp4" type="video/mp4" />
-        </video>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/media/hero-poster.jpg"
+          alt="Victorian Casino gaming floor"
+          className="w-full h-full object-cover opacity-50"
+        />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/80" />
       </div>

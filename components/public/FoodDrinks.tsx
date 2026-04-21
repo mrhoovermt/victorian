@@ -28,9 +28,13 @@ export function FoodDrinks() {
                 </li>
               ))}
             </ul>
-            {/* Photo placeholder */}
-            <div className="mt-8 aspect-video bg-[#1a1a1a] border border-[#2a2a2a] flex items-center justify-center">
-              <p className="text-gray-600 text-sm font-sans">Bar photo placeholder</p>
+            <div className="mt-8 aspect-video overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/edited/bar-interior.jpg"
+                alt="Bar and lounge area at Victorian Casino"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -57,9 +61,13 @@ export function FoodDrinks() {
                 </li>
               ))}
             </ul>
-            {/* Photo placeholder */}
-            <div className="mt-8 aspect-video bg-[#1a1a1a] border border-[#2a2a2a] flex items-center justify-center">
-              <p className="text-gray-600 text-sm font-sans">Food photo placeholder</p>
+            <div className="mt-8 aspect-video overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/edited/gaming-ambient-01.jpg"
+                alt="Gaming lounge interior at Victorian Casino"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
