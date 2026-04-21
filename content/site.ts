@@ -11,7 +11,7 @@ export const SITE = {
     weekends: "Fri–Sat: 8am – 2am",
   },
   googleMapsEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.0!2d-114.14!3d48.41!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zVmlrdG9yaWFuIENhc2lubw!5e0!3m2!1sen!2sus!4v1680000000000",
+    "https://maps.google.com/maps?q=6550+Hwy+93+S+Suite+104,+Whitefish,+MT+59937&output=embed",
 } as const;
 
 export const MENU = {

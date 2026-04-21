@@ -6,10 +6,10 @@ import { SITE } from "@/content/site";
 const links = [
   { label: "Gaming", href: "#gaming" },
   { label: "Food & Drinks", href: "#food" },
+  { label: "Location", href: "#location" },
   { label: "Players Club", href: "#players-club" },
   // { label: "Catering", href: "#catering" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Location", href: "#location" },
 ];
 
 export function Nav() {

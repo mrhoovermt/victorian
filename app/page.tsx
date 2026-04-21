@@ -18,11 +18,11 @@ export default function Home() {
         <Hero />
         <Gaming />
         <FoodDrinks />
+        <Location />
         <PlayersClub />
         {/* <Catering /> */}
         <TaxiSection />
         <Gallery />
-        <Location />
         <EmailSignup />
       </main>
       <Footer />
